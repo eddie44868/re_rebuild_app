@@ -158,9 +158,16 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                                     height: 150,
                                     width: screenWidth!-50,
                                     decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(15),
-                                    color: Colors.grey[800]
-                                  ),
+                                      gradient: LinearGradient(
+                                        begin: Alignment.centerLeft,
+                                        end: Alignment.centerRight,
+                                        colors: [
+                                          Colors.grey.shade800,
+                                          Colors.grey.shade500,
+                                        ],
+                                      ),
+                                      borderRadius: BorderRadius.circular(15),
+                                    ),
                                   child: Padding(
                                     padding: EdgeInsets.only(left: 15, top: 15),
                                     child: Column(
